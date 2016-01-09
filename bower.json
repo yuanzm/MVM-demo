@@ -1,0 +1,25 @@
+{
+  "name": "MVM-demo",
+  "homepage": "https://github.com/yuanzm/MVM-demo",
+  "authors": [
+    "yuanzm <1229084233@qq.com>"
+  ],
+  "description": "demos for Javascript MV* design pattern",
+  "main": "index.js",
+  "moduleType": [],
+  "keywords": [
+    "demo"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.3"
+  }
+}
