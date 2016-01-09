@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Backbone demo</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head>
+<body>
+    <div id="todoapp">
+        <header id="header">
+            <script type="text/template" id="todo__input-tpl">
+                <h1>Todos</h1>
+                <input id="new-todo" type="text" placeholder="What needs to be done?">  
+            </script>
+        </header>
+        <section id="todolist">
+            <ul id="todo-list">
+                <script type="text/template" id="todo__list-item-tpl">
+                    <div class="view">
+                        <input class="toggle" type="checkbox" <%= done ? 'checked' : '' %>>
+                        <label><%- content %></label>
+                        <a class="destroy"></a>
+                    </div>
+                    <input class="edit" type="text" value="<%- content %>">
+                </script>
+            </ul>
+        </section>
+    </div>
+</body>
+
+<script src="../../lib/jquery/dist/jquery.min.js"></script>
+<script src="../../lib/underscore/underscore-min.js"></script>
+<script src="../../lib/backbone/backbone-min.js"></script>
+<script src="app.js"></script>
+</html>
